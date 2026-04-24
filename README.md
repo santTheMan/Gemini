@@ -45,13 +45,17 @@ cp .env.example .env.local
 
 ## Deploy to Vercel
 
-1. Push this branch to GitHub (already done by the build automation).
-2. <https://vercel.com/new> → **Import Git Repository** → pick this repo.
-3. Framework preset will auto-detect as **Next.js**. No build config changes needed.
-4. Set `NEXT_PUBLIC_SITE_URL` to your production domain (e.g. `https://evverywhere.com`).
-5. Click **Deploy**.
+**One-click:** [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FsantTheMan%2FGemini&project-name=evverywhere&repository-name=evverywhere)
 
-Vercel auto-provisions the Edge Network, AVIF/WebP image optimisation, and the `/sitemap.xml` + `/robots.txt` routes.
+Or manually:
+
+1. <https://vercel.com/new> → **Import Git Repository** → pick `santTheMan/Gemini`.
+2. **Branch** → `claude/install-dev-tools-ITKYo` (or set as default after merge).
+3. Framework preset auto-detects as **Next.js**. No build config changes needed.
+4. (Optional) Set `NEXT_PUBLIC_SITE_URL` to your production domain (e.g. `https://evverywhere.com`).
+5. **Deploy** (≈90 seconds).
+
+Vercel auto-provisions the Edge Network, AVIF/WebP image optimisation, and the `/sitemap.xml` + `/robots.txt` routes. Region pinning (`cpt1`, `fra1`) is set in `vercel.json` for South African latency.
 
 ## Project structure
 
