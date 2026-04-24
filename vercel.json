@@ -4,7 +4,7 @@
   "buildCommand": "next build",
   "installCommand": "npm install",
   "outputDirectory": ".next",
-  "regions": ["cpt1", "fra1"],
+  "regions": ["cpt1"],
   "headers": [
     {
       "source": "/(.*)",
